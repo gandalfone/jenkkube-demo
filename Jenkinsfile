@@ -51,7 +51,7 @@ pipeline {
 
   }
   environment {
-    imageName = 'gandalfon/jenkkube-demo'
+    imageName = 'gandalfone/jenkkube-demo'
     registryCredentialSet = 'dockerhub'
     registryUri = ''
     dockerInstance = ''
