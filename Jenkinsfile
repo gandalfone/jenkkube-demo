@@ -51,7 +51,7 @@ pipeline {
 
   }
   environment {
-    imageName = 'allebb/jenkkube-demo'
+    imageName = 'dataneer/jenkkube-demo'
     registryCredentialSet = 'dockerhub'
     registryUri = ''
     dockerInstance = ''
