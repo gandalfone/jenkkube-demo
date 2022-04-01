@@ -34,7 +34,7 @@ pipeline {
       steps {
         echo 'Publishing container image to the registry...'
         script {
-          #docker.withRegistry('', registryCredentialSet) {
+          //docker.withRegistry('', registryCredentialSet) {
           docker.withRegistry(registryUri) {
             dockerInstance.push("${env.BUILD_NUMBER}")
             dockerInstance.push("latest")
@@ -52,8 +52,8 @@ pipeline {
 
   }
   environment {
-    #imageName = 'dataneer/jenkkube-demo'
-    #registryCredentialSet = 'dockerhub'
+    //imageName = 'dataneer/jenkkube-demo'
+    //registryCredentialSet = 'dockerhub'
     imageName = 'jenkkube-demo'
     registryUri = 'https:/smaug.sironagenomics.com:5000'
     dockerInstance = ''
