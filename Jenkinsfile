@@ -35,7 +35,7 @@ pipeline {
         echo 'Publishing container image to the registry...'
         script {
           //docker.withRegistry('', registryCredentialSet) {
-          docker.withRegistry(registryUri) {
+          docker.withRegistry() {
             dockerInstance.push("${env.BUILD_NUMBER}")
             dockerInstance.push("latest")
           }
