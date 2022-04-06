@@ -54,7 +54,7 @@ pipeline {
   environment {
     //imageName = 'dataneer/jenkkube-demo'
     //registryCredentialSet = 'dockerhub'
-    imageName = 'smaug.sironagenomics.com:5000/myjenkkube-demo'
+    imageName = 'myjenkkube-demo'
     registryUri = 'https://smaug.sironagenomics.com:5000'
     dockerInstance = ''
   }
